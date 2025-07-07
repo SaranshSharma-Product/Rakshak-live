@@ -1,97 +1,48 @@
-# Rakshak Live – Roadmap
+# Rakshak Live – Product Roadmap
 
-> This roadmap outlines the phased development and implementation plan for Rakshak Live — from MVP prototyping to national rollout.
-
----
-
-## 📌 Current Stage: Ideation & Government Proposal (Q2–Q3 2025)
-
-- ✅ PRD, vision, technical feasibility documents drafted
-- ✅ Core feature map and data sensitivity analysis complete
-- ✅ Repo structure and documentation finalized
-- ⬜ Stakeholder briefings (MHA, MeitY, Smart City Councils)
-- ⬜ UI/UX mockups prepared for app and dashboard
+## Vision  
+Empower Indian citizens and police with a secure, real-time crime livestreaming platform that enhances public safety, accelerates response, and builds digital trust.
 
 ---
 
-## 🚧 Phase 1: Minimum Viable Product (MVP)
+## Roadmap Overview
 
-**Goal:** Build a functioning MVP of Rakshak Live for pilot testing in a single city (e.g., Indore or Pune).
-
-| Milestone                         | Timeline      |
-|----------------------------------|---------------|
-| Wireframes for mobile + dashboard| 1 week        |
-| Android app (stream + GPS + UI)  | 2–3 weeks     |
-| Backend (video chunking + storage)| 2 weeks      |
-| Police dashboard (view + route)  | 2 weeks       |
-| Silent witness module (IMEI/MAC) | 1 week        |
-| Aadhaar KYC integration (test mode) | 1 week     |
-| Final QA + UAT with mock data    | 1 week        |
-| **Pilot Launch in 1 city**       | **Month 2–3** |
+| Phase                | Timeline        | Objectives & Deliverables                                                                                           |
+|----------------------|-----------------|--------------------------------------------------------------------------------------------------------------------|
+| **Phase 1: MVP Pilot (Android)**       | 0–6 months     | - One-tap livestream Android app with GPS & landmark overlay<br>- Police dashboard with live stream & routing<br>- Secure encrypted storage on NIC/MeghRaj<br>- User authentication (Aadhaar/DigiLocker)<br>- Abuse flagging system<br>- Basic UI/UX optimized for low digital literacy |
+| **Phase 2: AI, Device Tracking & iOS Initiation** | 6–12 months    | - AI-based alert prioritization to reduce false alarms<br>- Local video buffering & fallback audio-only mode<br>- Collaboration with telcos for IMEI/MAC device logging (lawful interception)<br>- Enhanced dashboard features: multi-responder support, traffic-aware routing<br>- Begin iOS app development targeting Tier-1 users with core features |
+| **Phase 3: Public Engagement, Compliance & iOS Expansion** | 12–18 months   | - Police-controlled public broadcast of incident videos with judicial clearance<br>- Multi-language support for app & dashboard<br>- User education on app usage and abuse policies<br>- Strengthened privacy and legal compliance frameworks<br>- Expand iOS app to feature parity with Android |
+| **Phase 4: Nationwide Expansion & Cross-Platform Integration** | 18–24+ months  | - Scale to all major metros and Tier 2 cities<br>- Integration with national police IT and case management systems<br>- Continuous performance optimization and analytics-driven improvements<br>- Optional: AI-powered facial recognition (post legal vetting)<br>- Cross-platform synchronization and maintenance |
 
 ---
 
-## ⚙️ Phase 2: Secure Gov-Infra & AI Integration
+## Key Milestones
 
-**Goal:** Move from MVP to hardened government version.
-
-- Migrate backend and video storage to **NIC/MeghRaj cloud**
-- Integrate with **UIDAI + CCTNS** via MeitY-approved API access
-- Implement server-side **facial recognition using OpenCV/AWS Rekognition**
-- Add **anomaly detection** (auto-flagging false alarms, misuse)
-- Finalize **role-based access control** for dashboard
-- Secure logs for legal & judicial handover
-
----
-
-## 🌐 Phase 3: Expansion to Tier-1 Cities
-
-**Goal:** Roll out Rakshak Live in major smart cities with district police support.
-
-- Language support (Hindi, English, Marathi, Kannada, etc.)
-- Launch control center in 5 major metros (Delhi, Mumbai, Hyderabad, etc.)
-- Auto case file generator linked to **eCourts**
-- Route-based deployment analytics and response-time tracking
-- Begin public awareness campaign on national TV/socials
+- **M1:** MVP Android app + backend development completed (Month 3)  
+- **M2:** Pilot deployment in select city with police dashboard (Month 5)  
+- **M3:** AI alert prioritization & connectivity fallback implemented (Month 9)  
+- **M4:** Telco partnership established for device tracking (Month 11)  
+- **M5:** Initiate iOS app development (Month 9-12)  
+- **M6:** Launch public broadcast capabilities & multi-language support (Month 15)  
+- **M7:** Expand iOS app to full feature parity (Month 18)  
+- **M8:** Expand deployment to 5 major metropolitan areas (Month 18)  
+- **M9:** Nationwide rollout and police IT integration (Month 24)  
 
 ---
 
-## 🧠 Phase 4: National Grid (Optional Vision)
+## Risks & Mitigation
 
-**Goal:** Create an interconnected law enforcement network that responds intelligently to live crime data across India.
-
-- Cross-state suspect matching + alert routing
-- Pattern detection across live streams (serial crimes, harassment zones)
-- Smart drone integration in smart cities
-- Autonomous stream escalation (high-risk alerts prioritized by AI)
-- Rakshak Kiosks in public places (auto-video booths for citizens)
-
----
-
-## ⚖️ Dependencies & Approvals Needed
-
-| Area             | Dependency                        |
-|------------------|------------------------------------|
-| Identity Match   | UIDAI, CCTNS access (Gov approval) |
-| Device Logging   | DoT, telecoms (lawful interception)|
-| Cloud Hosting    | NIC / MeghRaj allocation           |
-| Police Ops       | State-level command center buy-in  |
-| KYC Enforcement  | Aadhaar/DigiLocker integration     |
+| Risk                          | Mitigation Strategy                                |
+|-------------------------------|--------------------------------------------------|
+| Connectivity challenges in rural/remote areas | Local caching, fallback streaming, optimized compression |
+| Legal & privacy compliance issues | Phased feature rollout, early legal reviews, strong data governance |
+| Police adoption and training hurdles | Simplified dashboards, targeted training, stakeholder engagement |
+| Misuse and false reporting     | Verified user identity, abuse flagging with manual review, user education |
+| System scalability & reliability | Cloud auto-scaling, distributed architecture, continuous monitoring |
+| iOS development and App Store restrictions | Dedicated iOS team, early Apple engagement, phased feature rollout |
 
 ---
 
-## 📈 Success Metrics
+## Summary
 
-- ⏱  Average time between alert and police acknowledgment < 60 sec
-- 🎥  % of crimes livestreamed that result in FIR with proof > 90%
-- 🧍‍♂️  # of unique citizens protected by app in first 6 months > 10K
-- 👮  Police response time tracking (live dashboard)
-- 🧠  Suspect matches via AI > 75% precision
-
----
-
-## 🏁 Final Note
-
-Rakshak Live is not a typical tech product. It’s a public infrastructure upgrade — a digital seatbelt for citizens and a command-line for justice.
-
-This roadmap reflects a **secure, focused, phased approach** that respects legality, privacy, and operational realism.
+This roadmap balances **pragmatism and ambition**, charting a clear path from a lean MVP Android launch to a robust, cross-platform, nationwide platform — all while ensuring **legal compliance, security, and usability** remain paramount.
