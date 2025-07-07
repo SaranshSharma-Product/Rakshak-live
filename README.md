@@ -55,5 +55,8 @@ All systems are designed to be **exclusively owned, operated, and accessed by go
 
 ---
 
-![Rakshak Live UI](docs/Rakshak-live.png)
+<h3>📱 App Preview</h3>
+<p>Here’s a glimpse of the Rakshak Live emergency stream interface:</p>
+<img src="docs/Rakshak-live.png" alt="Rakshak Live UI" width="400"/>
+
 
