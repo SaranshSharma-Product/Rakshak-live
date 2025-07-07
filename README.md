@@ -2,44 +2,56 @@
 
 **India’s First Real-Time Crime Livestream System — Fully Operated by the Government**
 
-Rakshak Live is a product idea for a government-controlled emergency response app that allows any verified citizen to instantly livestream a crime or threat to the nearest police authority. The app aims to serve as India’s digital eyes on the ground — capturing real-time video, location, and nearby device signals, even if the phone is destroyed mid-incident.
+Rakshak Live is a product idea for a government-controlled emergency response app that allows any verified citizen to instantly livestream a crime or threat to the nearest police authority. The app serves as India’s digital eyes on the ground — capturing real-time video, location, and surrounding device signals, even if the phone is destroyed mid-incident.
 
 ---
 
 ## 🚨 Why This Idea Matters
 
-India faces a growing gap between when a crime happens and when help arrives. Victims are often silenced, evidence lost, and justice delayed. Rakshak Live is designed to:
+India faces a critical gap between crimes being committed and law enforcement’s ability to respond in time. Victims are often silenced, evidence lost, and justice delayed. Rakshak Live aims to:
 
 - Capture unalterable video evidence
-- Alert police immediately with GPS + landmark data
-- Help identify criminals using AI and UID-linked facial recognition
-- Log nearby devices for forensic witness tracing
-- Preserve everything, even if the phone is broken
+- Alert police immediately with GPS and landmark data
+- Identify suspects using facial recognition and national databases
+- Log nearby devices for forensic traceability
+- Preserve all evidence even if the phone is broken or stolen
 
 ---
 
 ## 🎯 Core Concept Features
 
-- **One-Tap Livestream to Police**
+- **One-Tap Livestream to Police Control Rooms**
 - **Live Location & Landmark Detection**
-- **Route-to-Crime Navigation for Responders**
-- **AI Facial Recognition (Govt Database Access Only)**
-- **Silent Witness Logging (IMEI/MAC from Nearby Phones)**
-- **Conditional Public Broadcast from Police Handles**
-- **Immutable Evidence Cloud Backup**
+- **Route-to-Crime Navigation for Responding Officers**
+- **AI-Based Facial Recognition (UIDAI, CCTNS – Govt Access Only)**
+- **Silent Witness Logging (IMEI, MAC Addresses of Nearby Devices)**
+- **Conditional Public Broadcast via Police Social Media Handles**
+- **Immutable Video Evidence Backup in NIC/MeghRaj Cloud**
+- **Aadhaar-Verified Citizen Access Only**
 
-All systems are to be **owned, controlled, and moderated by government authorities only** — with no third-party or private sector data access.
+All systems are designed to be **exclusively owned, operated, and accessed by government authorities** — with zero involvement from private entities or third parties. Privacy and evidence integrity are legally safeguarded.
 
 ---
 
-## 🧱 Current Status
+## ⚙️ Tech Stack (Proposed)
 
-This project is in **ideation and documentation stage**. PRD, technical feasibility notes, and architectural plans are being drafted for proposal to:
+| Layer        | Technology |
+|--------------|------------|
+| Mobile App   | Android (Kotlin/Java), WebRTC, Google Maps |
+| Backend      | Spring Boot / Node.js |
+| Storage      | NIC/MeghRaj Govt Cloud, AES-encrypted |
+| Dashboard    | ReactJS + TailwindCSS |
+| Facial ID    | OpenCV, AWS Rekognition (Gov-licensed) |
+| Location API | Google Maps SDK / ISRO Bhuvan |
+| Identity     | UIDAI, CCTNS, SIM data via DoT |
 
-- Ministry of Home Affairs (MHA)
-- Ministry of Electronics and IT (MeitY)
-- Smart City Mission
-- State/District Police Departments
+---
+
+## 🔒 Legal & Operational Notes
+
+- All IMEI and MAC data captured is accessible only to authorized law enforcement, under Section 69 of the IT Act and Telecom coordination protocols.
+- Video chunks are uploaded in real-time to prevent loss, using secure, redundant, and encrypted storage.
+- All user actions are Aadhaar-verified to prevent prank abuse. False usage will trigger automated FIR generation and fines.
 
 ---
 
