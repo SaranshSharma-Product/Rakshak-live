@@ -55,5 +55,5 @@ All systems are designed to be **exclusively owned, operated, and accessed by go
 
 ---
 
-## 🗂 Repo Structure (Planned)
+![Rakshak Live UI](docs/Rakshak-live.png)
 
