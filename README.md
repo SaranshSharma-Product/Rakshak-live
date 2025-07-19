@@ -1,62 +1,100 @@
 # Rakshak Live (Proposed)
 
-**India’s First Real-Time Crime Livestream System — Fully Operated by the Government**
+**India’s First Government-Controlled Real-Time Crime Livestream and Emergency Response System**
 
-Rakshak Live is a product idea for a government-controlled emergency response app that allows any verified citizen to instantly livestream a crime or threat to the nearest police authority. The app serves as India’s digital eyes on the ground — capturing real-time video, location, and surrounding device signals, even if the phone is destroyed mid-incident.
-
----
-
-## 🚨 Why This Idea Matters
-
-India faces a critical gap between crimes being committed and law enforcement’s ability to respond in time. Victims are often silenced, evidence lost, and justice delayed. Rakshak Live aims to:
-
-- Capture unalterable video evidence
-- Alert police immediately with GPS and landmark data
-- Identify suspects using facial recognition and national databases
-- Log nearby devices for forensic traceability
-- Preserve all evidence even if the phone is broken or stolen
+**Rakshak Live** is a proposed national security platform that enables any Aadhaar-verified citizen to instantly livestream crimes or emergencies directly to local law enforcement authorities. The system is designed to operate entirely under government control, providing police with real-time visual evidence, geolocation data, facial recognition support, and device-level forensic logs—all stored immutably and accessed exclusively by authorized agencies.
 
 ---
 
-## 🎯 Core Concept Features
+## Why This Matters
 
-- **One-Tap Livestream to Police Control Rooms**
-- **Live Location & Landmark Detection**
-- **Route-to-Crime Navigation for Responding Officers**
-- **AI-Based Facial Recognition (UIDAI, CCTNS – Govt Access Only)**
-- **Silent Witness Logging (IMEI, MAC Addresses of Nearby Devices)**
-- **Conditional Public Broadcast via Police Social Media Handles**
-- **Immutable Video Evidence Backup in NIC/MeghRaj Cloud**
-- **Aadhaar-Verified Citizen Access Only**
+India’s current emergency response systems are limited by delayed reporting, lack of real-time evidence, and insufficient digital infrastructure. Rakshak Live bridges these gaps by enabling:
 
-All systems are designed to be **exclusively owned, operated, and accessed by government authorities** — with zero involvement from private entities or third parties. Privacy and evidence integrity are legally safeguarded.
+* Real-time video reporting directly from the scene of the crime
+* Immediate alerting of nearby police control rooms and units
+* Precise GPS and landmark tagging for rapid response
+* Automatic suspect identification using government databases
+* Background logging of nearby mobile devices for post-crime investigation
+* Immutable evidence storage, even if the victim is incapacitated or the phone is damaged
 
 ---
 
-## ⚙️ Tech Stack (Proposed)
+## Core Functional Features
 
-| Layer        | Technology |
-|--------------|------------|
-| Mobile App   | Android (Kotlin/Java), WebRTC, Google Maps |
-| Backend      | Spring Boot / Node.js |
-| Storage      | NIC/MeghRaj Govt Cloud, AES-encrypted |
-| Dashboard    | ReactJS + TailwindCSS |
-| Facial ID    | OpenCV, AWS Rekognition (Gov-licensed) |
-| Location API | Google Maps SDK / ISRO Bhuvan |
-| Identity     | UIDAI, CCTNS, SIM data via DoT |
+**Livestream Activation**
+Citizens can initiate a secure, live video feed with one tap. The stream is pushed instantly to the nearest police control center.
+
+**Location and Landmark Overlay**
+GPS coordinates and nearby landmark names are automatically displayed on the stream interface, aiding officers in identifying the exact location of the incident.
+
+**Police Routing**
+The app provides real-time routing instructions for the nearest law enforcement units, ensuring optimized travel time to the incident site.
+
+**Facial Recognition (Authority Only)**
+Suspects captured in the livestream are processed using facial recognition, matching faces against UIDAI, CCTNS, and FIR records. Identity matches are tagged for immediate action.
+
+**Conditional Public Broadcast**
+If facial recognition fails to identify a suspect, police can manually edit and publish clips of the stream through official government social media handles, requesting public assistance in identification. Victim identities are automatically anonymized.
+
+**Silent Digital Witness Logging**
+The app detects and logs nearby devices using Bluetooth, Wi-Fi, and network signals. IMEI numbers, MAC addresses, and signal strength are recorded to assist in later investigations. Identity matching is done exclusively through telco partnerships under lawful authorization.
+
+**Immutable Evidence Storage**
+All video and metadata are stored in real time on government-owned cloud infrastructure (e.g., NIC Cloud, MeghRaj). Data is encrypted, tamper-proof, and admissible in court.
+
+**Access Control and Verification**
+Only Aadhaar-verified users can activate the system. All data is accessible only by law enforcement officials. There is no private or third-party data access.
+
+**Anti-Misuse Mechanism**
+False alerts are detected via AI-assisted pattern analysis and manual review. Misuse results in an automated fine of ₹10,000 or temporary police detention. Repeat offenders are permanently banned.
 
 ---
 
-## 🔒 Legal & Operational Notes
+## Technical Architecture (Proposed)
 
-- All IMEI and MAC data captured is accessible only to authorized law enforcement, under Section 69 of the IT Act and Telecom coordination protocols.
-- Video chunks are uploaded in real-time to prevent loss, using secure, redundant, and encrypted storage.
-- All user actions are Aadhaar-verified to prevent prank abuse. False usage will trigger automated FIR generation and fines.
+| Component          | Technology/Service                                 |
+| ------------------ | -------------------------------------------------- |
+| Mobile App         | Android (Kotlin/Java), WebRTC                      |
+| Location Services  | Google Maps SDK or ISRO Bhuvan                     |
+| Backend            | Spring Boot / Node.js                              |
+| Cloud Storage      | NIC/MeghRaj (Government cloud), real-time chunking |
+| Admin Dashboard    | ReactJS with TailwindCSS                           |
+| Facial Recognition | OpenCV, AWS Rekognition (Gov-authorized access)    |
+| Identity APIs      | Aadhaar, CCTNS, SIM-KYC via DoT                    |
 
 ---
 
-<h3>📱 App Preview</h3>
-<p>Here’s a glimpse of the Rakshak Live emergency stream interface:</p>
+## Legal and Operational Compliance
+
+* All surveillance features comply with **Section 69 of the IT Act** for lawful interception.
+* Evidence storage aligns with the **Indian Evidence Act** to ensure admissibility in court.
+* Identity tracing through device logs is conducted via **official requests to telecom operators** under CrPC authorizations.
+* User KYC is mandatory. Anonymous usage is not permitted.
+* Social media publishing is only executed through **verified government handles** under officer supervision.
+
+---
+
+## Status: Under Proposal
+
+Rakshak Live is currently a proposed system intended for pilot implementation in partnership with:
+
+* **Ministry of Home Affairs (MHA)** – For deployment, oversight, and national scale-up
+* **Ministry of Electronics and Information Technology (MeitY)** – For UID/IMEI database access, e-challan integration, and Play Store support
+* **Smart City Mission** – For on-ground implementation in select urban zones
+* **State Police Departments** – For dashboard integration and training
+
+Initial pilot cities: **Delhi, Pune, Indore** (subject to approval)
+
+---
+
+## App Preview
+
+The following is a conceptual mockup of the Rakshak Live interface during a crime-stream activation:
+
 <img src="docs/Rakshak-live.png" alt="Rakshak Live UI" width="400"/>
 
+---
 
+## Contribution and Feedback
+
+This repository serves as the foundation for a potential civic-tech infrastructure to be operated exclusively by the Government of India. If you are a policymaker, law enforcement professional, public safety researcher, or infrastructure partner interested in contributing to this concept, please reach out or raise a formal issue in the repository.
